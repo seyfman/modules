@@ -1,0 +1,41 @@
+// брейкпоинты для адаптива.
+$md1: 1199.98px;
+$md1-noPX: 1199.98;
+
+$md2: 991.98px;
+$md2-noPX: 991.98;
+
+$md3: 767.98px;
+$md3-noPX: 767.98;
+
+$md4: 575.98px;
+$md4-noPX: 575.98;
+
+$md5: 479.98px;
+$md5-noPX: 479.98;
+
+$mdTable: 1049.98px;
+$mdTable-noPX: 1049.98;
+
+// ========== Container ==========
+$minWidth: 320px;
+$maxWidth: 1920px; // Ширина полотна
+
+$containerAdaptiv: 1440; // Указывать БЕЗ пикселей для mixin-адаптива
+$container: 1440px; // Указать С px!!!
+
+$container-padding: 0px;
+// @media (max-width: $md3) {
+//   $container-padding: 0;
+// }
+
+// ========== Colors ==========
+$bg-color: #fff;
+
+$text-dark: #202020;
+$text-white: #fff;
+$acsent: #f1b99d;
+$blue: #4c5c6b;
+$dark: #262626;
+$white: #fff;
+$grey: #ededed;

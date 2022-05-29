@@ -1,0 +1,57 @@
+// ========== Подключаем Normalize ==========
+// @import "normalize";
+
+// ========== Swiper ==========
+// @import "swiper-bundle.min";
+// @import "swiper-vars";
+// @import "swiper";
+
+// ========= Обнуление стилей ================
+@import "null";
+
+// ========= Подключение шрифтов =================
+@import "fonts";
+
+// ========= подключение переменных ===============
+@import "vars";
+
+// ========= Подключение mixin =============
+@import "mixins";
+
+// ======== General =======
+@import "general";
+
+// ======== Header =======
+@import "header";
+
+//========== Footer ========
+@import "footer";
+
+// ========= СТРАНИЦЫ ===============
+// ======= index.html ===============
+
+//======== SiteBar ========
+// @import "sidebar";
+
+// ======== Index maain ==========
+// @import "lesson_5";
+// @import "gemenumber";
+@import "tabs";
+
+//========== object-modal.html ===============
+//@import "object-modal";
+
+//========== news-list.html ===============
+// @import "news-list";
+
+// ============ all-news.html ========
+// @import "all-news";
+
+//============ modal-news.html ===========
+// @import "modal-news";
+
+// ============ modal-contact.html ==========
+// @import "modal-contact";
+
+//============ contact.html =======
+// @import "contact";

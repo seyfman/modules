@@ -1,0 +1,88 @@
+// Подключение шрифта
+// @mixin font($font_name, $file_name, $weight, $style) {
+//   @font-face {
+//     font-family: $font_name;
+//     font-display: swap;
+//     src: url("../fonts/#{$file_name}.woff2") format("woff2"), url("../fonts/#{$file_name}.woff") format("woff");
+//     font-weight: #{$weight};
+//     font-style: #{$style};
+//   }
+// }
+
+// Адаптивное свойство ================================================================
+// Свойство в ковычках, Начальный размер элемента, Конечный размер элемента, тип: 1-если меньше контейнера, 2-если больше контейнера(не доделан), 0-всегда(не доделан)
+@mixin adaptiv-value($property, $startSize, $minSize, $type) {
+  $addSize: $startSize - $minSize;
+  $minSizePX: $minSize + px;
+  @if $type==1 {
+    //Только если меньше контейнера
+    #{$property}: $startSize + px;
+
+    @media (max-width: $container) {
+      #{$property}: calc($minSizePX + $addSize * ((100vw - 320px) / ($containerAdaptiv - 320)));
+    }
+  } @else if $type==2 {
+    //Только если больше контейнера
+    #{$property}: $startSize + px;
+
+    @media (min-width: #{$container + px}) {
+      #{$property}: calc($minSizePX + $addSize * ((100vw - 320px) / ($maxWidth - 320)));
+    }
+  } @else {
+    //Всегда
+    #{$property}: calc($minSizePX + $addSize * ((100vw - 320px) / ($maxWidth - 320)));
+  }
+}
+
+// Адаптивное свойство До ========================================================================================
+
+// Свойство в скобках, Начальный размер элемента, Конечный размер элемента, Начальный размер экрана, Конечный размер экрана
+@mixin adaptiv-value-to($property, $startSize, $minSize, $startWidth, $minWidthNoPX) {
+  $addSize: $startSize - $minSize;
+
+  $minSizePX: $minSize + px;
+  $minWidthPX: $minWidthNoPX + px;
+  $startWidthPX: $startWidth + px;
+
+  #{$property}: $startSize + px;
+  @media (max-width: $startWidthPX) and (min-width: $minWidthPX) {
+    #{$property}: calc($minSizePX + $addSize * ((100vw - $minWidthPX) / ($startWidth - $minWidthNoPX)));
+  }
+}
+
+@mixin adaptiv-value-to-end($property, $startSize, $minSize, $startWidth, $minWidthNoPX) {
+  $addSize: $startSize - $minSize;
+
+  $minSizePX: $minSize + px;
+  $minWidthPX: $minWidthNoPX + px;
+  $startWidthPX: $startWidth + px;
+
+  #{$property}: $startSize + px;
+  @media (max-width: $startWidthPX) and (min-width: $minWidthPX) {
+    #{$property}: calc($minSizePX + $addSize * ((100vw - $minWidthPX) / ($startWidth - $minWidthNoPX)));
+  }
+  @media (max-width: $minWidthPX) {
+    #{$property}: $minSizePX;
+  }
+}
+
+@mixin adaptiv-value-noStart-to-end($property, $startSize, $minSize, $startWidth, $minWidthNoPX) {
+  $addSize: $startSize - $minSize;
+
+  $minSizePX: $minSize + px;
+  $minWidthPX: $minWidthNoPX + px;
+  $startWidthPX: $startWidth + px;
+
+  @media (max-width: $startWidthPX) and (min-width: $minWidthPX) {
+    #{$property}: calc($minSizePX + $addSize * ((100vw - $minWidthPX) / ($startWidth - $minWidthNoPX)));
+  }
+  @media (max-width: $minWidthPX) {
+    #{$property}: $minSizePX;
+  }
+}
+
+// Размер в одну строку(@include size(80px, 50px);) ================================================================
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}

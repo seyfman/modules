@@ -1,0 +1,36 @@
+html {
+  max-width: $maxWidth;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  background-color: $bg-color;
+  overflow-x: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  min-width: $minWidth;
+  max-width: $container + $container-padding + $container-padding;
+
+  width: 100%;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  margin: 0 auto;
+  @media (max-width: $md3) {
+    max-width: $container;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
