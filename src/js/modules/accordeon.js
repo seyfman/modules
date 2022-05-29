@@ -1,7 +1,6 @@
 const accordeon = (classTitle, classContent, hiddenClass, activeClass) => {
   const title = document.querySelectorAll(classTitle);
   const content = document.querySelectorAll(classContent);
-  console.log(title);
 
   function accordeonClosed() {
     content.forEach((item) => {
@@ -26,6 +25,10 @@ const accordeon = (classTitle, classContent, hiddenClass, activeClass) => {
   accordeonClosed();
   accordeonOpen();
 
-}
+};
+
+//Подключение аккордеона
+// Передать классы title, content, hiddenClass(без точки), activeClass(без точки)
+// accordeon('.accordeon__item-title', '.accordeon__item-content', 'accordeon__item-content--hidden', 'accordeon__item-content--active');
 
 export default accordeon;

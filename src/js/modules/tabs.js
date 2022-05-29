@@ -34,4 +34,8 @@ const tabs = (dataTabs, dataTabsContent, activeClass, hiddenClass) => {
 
 };
 
+// Подключение табов
+// Передать атрибут обертки табов, атрибут обертки контента, активный класс, класс невидимости
+// tabs("[data-tabs]", '[data-tabs-content]', 'tabs-active', 'hidden');
+
 export default tabs;

@@ -1,0 +1,14 @@
+.locations {
+  padding: 50px;
+  text-align: center;
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__city,
+  &__region,
+  &__country {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+}

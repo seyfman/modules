@@ -4,14 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext&_v=20220529133205" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220529133205">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext&_v=20220529191100" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220529191100">
   <title>Модули по JS</title>
 </head>
 
 <body>
   
   <div class="container">
+    <div class="locations">
+  <h1 class="locations__title">Ваше местоположение:</h1>
+  <div class="locations__city">Город:</div>
+  <div class="locations__region">Регион:</div>
+  <div class="locations__country">Страна:</div>
+</div>
     <div class="tabs">
   <h1 class="tabs__title">Табы</h1>
   <ul class="tabs__header" data-tabs>
@@ -81,12 +87,26 @@
     </div>
   </div>
 </div>
+    <button class="modal__btn-open">Открыть модальное окно</button>
+
+<div class="modal modal--active">
+  <div class="modal-window">
+    <h1 class="modal-window__title">Модальное окно</h1>
+    <div class="modal-window__content">Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные
+      тексты. Океана даже что раз эта! Рыбными власти рукопись все! Решила снова образ рукопись использовало ведущими
+      мир гор наш? Запятой, всеми.
+    </div>
+    <button class="modal-window__btn-closed">Закрыть окно</button>
+  </div>
+</div>
+
   </div>
 
 
 
   
-  <script src="js/app.min.js?_v=20220529133205"></script>
+  <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU&_v=20220529191100" type="text/javascript"></script>
+<script src="js/app.min.js?_v=20220529191100"></script>
 
 
 </body>
