@@ -2,7 +2,9 @@
 import tabs from "./modules/tabs.js";
 import accordeon from "./modules/accordeon.js";
 import modalWindow from "./modules/modal.js";
-import geolocation from "./modules/location.js"
+import geolocation from "./modules/location.js";
+import livespan from "./modules/livespan.js";
+
 
 
 
@@ -25,7 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Необходимо подключить <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
   geolocation('.locations__city', '.locations__region', '.locations__country');
 
-
-
+  // Сколько прожил
+  modalWindow('.livespan-btn', '.livespan-btn__closed', '.livespan-modal', false);
+  livespan();
 
 });

@@ -270,3 +270,155 @@ li {
 .modal-window__btn-closed:hover {
   background-color: #e6e6e6;
 }
+
+.livespan-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 30px;
+  font-size: 24px;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  cursor: pointer;
+}
+.livespan-btn__closed {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.livespan-modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.livespan-modal__window {
+  min-width: 700px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.livespan-modal__date {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.livespan-modal__date-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.livespan-modal__date-todays {
+  font-size: 25px;
+}
+.livespan-modal__btn {
+  display: block;
+  margin: 0px auto 15px;
+  padding: 10px 30px;
+  font-size: 24px;
+  border-radius: 5px;
+  background-color: transparent;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  cursor: pointer;
+}
+
+.livespan-modal-dateofbirth {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.livespan-modal-dateofbirth__title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.livespan-modal-dateofbirth__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.livespan-modal-dateofbirth__year-title {
+  margin-bottom: 10px;
+}
+.livespan-modal-dateofbirth__yaer-input {
+  padding: 5px 10px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+.livespan-modal-dateofbirth__yaer-select {
+  font-size: 30px;
+}
+.livespan-modal-dateofbirth__month-title {
+  margin-bottom: 10px;
+}
+.livespan-modal-dateofbirth__month-input {
+  padding: 5px 10px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+.livespan-modal-dateofbirth__month-select {
+  font-size: 30px;
+}
+.livespan-modal-dateofbirth__day-title {
+  margin-bottom: 10px;
+}
+.livespan-modal-dateofbirth__day-input {
+  padding: 5px 10px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+.livespan-modal-dateofbirth__day-select {
+  font-size: 30px;
+}
+
+.livespan-modal-output__title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.livespan-modal-output__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.livespan-modal-output__yaer {
+  text-align: center;
+}
+.livespan-modal-output__yaer-output {
+  font-size: 60px;
+  font-weight: 700;
+  color: #00ff1a;
+}
+.livespan-modal-output__year-text {
+  font-size: 30px;
+}
+.livespan-modal-output__month {
+  text-align: center;
+}
+.livespan-modal-output__month-output {
+  font-size: 60px;
+  font-weight: 700;
+  color: #00ff1a;
+}
+.livespan-modal-output__month-text {
+  font-size: 30px;
+}
+.livespan-modal-output__day {
+  text-align: center;
+}
+.livespan-modal-output__day-output {
+  font-size: 60px;
+  font-weight: 700;
+  color: #00ff1a;
+}
+.livespan-modal-output__day-text {
+  font-size: 30px;
+}

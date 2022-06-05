@@ -1,0 +1,183 @@
+.livespan-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 30px;
+  font-size: 24px;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  cursor: pointer;
+  &__closed {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 40px;
+    border: none;
+    background-color: transparent;
+  }
+}
+.livespan-modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+
+  &__window {
+    min-width: 700px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+  }
+  &__date {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__date-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__date-todays {
+    font-size: 25px;
+  }
+
+  &__btn {
+    display: block;
+    margin: 0px auto 15px;
+    padding: 10px 30px;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+  }
+}
+.livespan-modal-dateofbirth {
+  text-align: center;
+  margin-bottom: 30px;
+  &__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__yaer {
+  }
+
+  &__year-title {
+    margin-bottom: 10px;
+  }
+
+  &__yaer-input {
+    padding: 5px 10px;
+    font-size: 30px;
+    border-radius: 5px;
+  }
+
+  &__yaer-select {
+    font-size: 30px;
+  }
+
+  &__month {
+  }
+
+  &__month-title {
+    margin-bottom: 10px;
+  }
+
+  &__month-input {
+    padding: 5px 10px;
+    font-size: 30px;
+    border-radius: 5px;
+  }
+
+  &__month-select {
+    font-size: 30px;
+  }
+
+  &__day {
+  }
+
+  &__day-title {
+    margin-bottom: 10px;
+  }
+
+  &__day-input {
+    padding: 5px 10px;
+    font-size: 30px;
+    border-radius: 5px;
+  }
+
+  &__day-select {
+    font-size: 30px;
+  }
+}
+.livespan-modal-output {
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  &__yaer {
+    text-align: center;
+  }
+
+  &__yaer-output {
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(0, 255, 26);
+  }
+
+  &__year-text {
+    font-size: 30px;
+  }
+
+  &__month {
+    text-align: center;
+  }
+
+  &__month-output {
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(0, 255, 26);
+  }
+
+  &__month-text {
+    font-size: 30px;
+  }
+
+  &__day {
+    text-align: center;
+  }
+
+  &__day-output {
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(0, 255, 26);
+  }
+
+  &__day-text {
+    font-size: 30px;
+  }
+}
