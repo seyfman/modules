@@ -4,6 +4,7 @@ import accordeon from "./modules/accordeon.js";
 import modalWindow from "./modules/modal.js";
 import geolocation from "./modules/location.js";
 import livespan from "./modules/livespan.js";
+import cooltext from "./modules/cooltext.js";
 
 
 
@@ -30,5 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Сколько прожил
   modalWindow('.livespan-btn', '.livespan-btn__closed', '.livespan-modal', false);
   livespan();
+
+
+  // Появляющийся текст
+  // Передать класс текста
+  // cooltext();
 
 });

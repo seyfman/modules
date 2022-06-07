@@ -271,6 +271,17 @@ li {
   background-color: #e6e6e6;
 }
 
+.cooltext {
+  max-width: 800px;
+  width: 100%;
+  margin: 50px auto 50px;
+  padding: 50px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
 .livespan-btn {
   display: block;
   margin: 30px auto;
